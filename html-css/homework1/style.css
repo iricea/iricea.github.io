@@ -1,0 +1,47 @@
+body {
+	margin: 0 auto;
+	font-family: Times, serif;
+}
+.workspace {
+	margin: 0;
+	padding: 0;
+	height: 806px;
+	width: 1440px;
+	background-color: #eeeeee;
+}
+.whitepaper {
+	position: center;
+	margin: 4px 462px 46px 462px;
+	padding: 50px;
+	height: 652px;
+	width: 414px;
+	background-color: #ffffff;
+	border: 1px #d5d5d5;
+	box-shadow: 0 0 10px #d5d5d5;
+}
+.header{
+	text-align: center;
+	font-family: Times, serif;
+	font-size: 12px;
+}
+.foto {
+	margin: 0 auto;
+	height: 150px;
+	width: 150px;
+}
+.lifestyle {
+	padding-left: 13px;
+}
+.reason {
+	padding: 13px;
+	border-top: 1px #7a7a7a solid;
+	border-bottom: 1px #7a7a7a solid;
+}
+.phone {
+	padding-left: 13px;
+}
+.profile {
+	padding-left: 13px;
+	border-bottom: 1px #7a7a7a solid;
+}
+.feedback {padding-left: 13px;}
