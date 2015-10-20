@@ -1,47 +1,31 @@
 body {
-	margin: 0 auto;
 	font-family: Times, serif;
-}
-.workspace {
-	margin: 0;
-	padding: 0;
-	height: 806px;
-	width: 1440px;
+	font-size: 16px;
 	background-color: #eeeeee;
 }
-.whitepaper {
-	position: center;
-	margin: 4px 462px 46px 462px;
-	padding: 50px;
-	height: 652px;
-	width: 414px;
+
+.workspace {
+	margin: 0 auto;
+	padding: 30px 50px;
+	width: 460px;
 	background-color: #ffffff;
 	border: 1px #d5d5d5;
 	box-shadow: 0 0 10px #d5d5d5;
 }
-.header{
+h1{
 	text-align: center;
-	font-family: Times, serif;
-	font-size: 12px;
+	font-size: 20px;
 }
-.foto {
-	margin: 0 auto;
+
+img {
 	height: 150px;
 	width: 150px;
 }
-.lifestyle {
-	padding-left: 13px;
+hr {
+	color: #7a7a7a;
+	line-height: 1.5px;
 }
-.reason {
+p {
 	padding: 13px;
-	border-top: 1px #7a7a7a solid;
-	border-bottom: 1px #7a7a7a solid;
+	line-height: 20px;
 }
-.phone {
-	padding-left: 13px;
-}
-.profile {
-	padding-left: 13px;
-	border-bottom: 1px #7a7a7a solid;
-}
-.feedback {padding-left: 13px;}
