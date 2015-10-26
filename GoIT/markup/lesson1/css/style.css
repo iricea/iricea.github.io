@@ -27,18 +27,11 @@ img {
 	width: 150px;
 }
 
-p {
-	padding: 13px 0;
+p, ul {
+	margin-left: 10px;
 	line-height: 20px;
 }
 
-p, ul {
-	margin-left: 10px;
-}
 .underline {
 	border-bottom: 1px solid #7a7a7a;
-}
-ul {
-	line-height: 20px;
-	padding-bottom: 13px;
 }
