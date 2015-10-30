@@ -21,8 +21,6 @@ body {
 /*Header*/
 
 .menu{
-	position: relative;
-	overflow: hidden;
 	margin: 30px 0;
 	list-style: none;
 	background: rgb(94,94,94); /* Old browsers */
@@ -48,6 +46,7 @@ body {
 }
 
 .menu a:hover {
+	margin: 0 -1px;
 	background: rgb(74,74,74); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(74,74,74,1) 0%, rgba(46,46,46,1) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(74,74,74,1)), color-stop(100%,rgba(46,46,46,1))); /* Chrome,Safari4+ */
@@ -58,11 +57,15 @@ body {
 	border-left: 1px solid #838383;
 	border-right: 1px solid #838383;
 }
+
 /*Content*/
-.container {
-	position: relative;
-	overflow: hidden;
+
+.clearfix:after {
+	content: '';
+	clear: both;
+	display: block;
 }
+
 .sidebar {
 	list-style: none;
 	float: left;
@@ -109,9 +112,6 @@ p {
 
 /*Footer*/
 footer {
-	clear: both;
-	position: relative;
-	overflow: hidden;
 	margin: 50px 0;
 	background-color: #e1e1e1;
 }
