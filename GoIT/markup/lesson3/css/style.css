@@ -6,6 +6,7 @@
 body {
 	background-color: #f9f9f9;
 	font-family: "Open Sans", sans-serif;
+	font-size: 13px;
 }
 
 .wrapper {
@@ -76,8 +77,8 @@ body {
 	display: block;
 	border: 1px solid #c8c8c8;
 	border-top: none;
-	font-size: 13px;
 }
+
 .sidebar li:first-child {
 	border-top: 1px solid #c8c8c8;
 }
@@ -101,10 +102,9 @@ body {
 	width: 678px;
 }
 
-p {
+.content {
 	float: right;
 	width: 638px;
-	font-size: 13px;
 	color: #2c2c2c;
 	margin: 40px 0;
 	padding: 20px;
@@ -118,7 +118,6 @@ footer {
 
 footer li {
 	list-style: none;
-	font-size: 13px;
 	line-height: 40px;
 }
 
@@ -137,4 +136,6 @@ footer a:hover {
 .copyright {
 	float: right;
 	padding: 0 25px;
+	line-height: 40px;
+	color: #2c2c2c;
 }
