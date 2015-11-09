@@ -12,7 +12,7 @@ body {
 .wrapper {
 	width: 1000px;
 	max-height: 988px;
-	background-color: #ffffff;
+	background-color: #fff;
 	box-shadow: 0 3px 5px #000;
 	z-index: 10;
 	margin: 73px auto 0;
@@ -51,14 +51,45 @@ header {
 
 .countries li {
 	display: inline-block;
-	margin: 8px;
+	margin-top: 20px;
 }
 
+.countries li:first-child {
+	background: 10px 0 url('../img/flag_india.png') no-repeat;
+}
+.countries li:nth-child(2) {
+	background: 10px 0 url('../img/flag_nepal.png') no-repeat;
+}
+.countries li:nth-child(3) {
+	background: 10px 0 url('../img/flag_tibet.png') no-repeat;
+}
+.countries li:nth-child(4) {
+	background: 10px 0 url('../img/flag_butan.png') no-repeat;
+}
+.countries li:nth-child(5) {
+	background: 10px 0 url('../img/flag_sri-lanka.png') no-repeat;
+}
+.countries li:nth-child(6) {
+	background: 10px 0 url('../img/flag_maldives.png') no-repeat;
+}
 .countries a {
+	display: block;
+	width: 60px;
+	height: 42px;
+	padding-right: 15px;
+}
+
+span.countries {
+	position: relative;
+	top: 45px;
+	left: 30px;
 	color: #128aa7;
 	font-size: 10px;
 	text-align: center;
+	margin-top: -5px;
+	width: 60px;
 }
+
 .main_photo {
 	border-top: 1px solid #128aa7;
 	border-bottom: 1px solid #138aa7;
@@ -93,7 +124,7 @@ header {
 	position: relative;
 }
 
-.menu a {
+.menu a, span {
 	display: block;
 	padding: 0 30px;
 	line-height: 28px;
@@ -106,10 +137,10 @@ header {
   padding: 0 10px;
 }
 
-.dropdown>a:after{
+.dropdown>span:after{
 	content: ' \25be';
 }
-.dropdown {
+span.dropdown {
 	position: relative;
 }
 .submenu {
