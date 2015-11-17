@@ -1,3 +1,5 @@
+@import url("reset.css");
+
 @font-face {
     font-family: 'Helvetica Neue';
     src: url('../fonts/helveticaneue-thin-webfont.eot');
@@ -9,10 +11,10 @@
     font-style: normal;
 }
 
-* {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+body {
+	background: url('../img/background.jpg') center 36px no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
 	font-family: 'Helvetica Neue', Arial, sans-serif;
 	font-size: 14px;
 }
@@ -26,7 +28,7 @@
 /* MENU */
 
 .menu {
-	width: 1215px;
+	width: 100%;
 	background: #074c89;
 	margin: 0 auto;
 }
@@ -48,7 +50,7 @@
 }
 .menu li:first-child {
 	padding-left: 15px;
-	margin-right: 20px;
+	/*margin-right: 20px;*/
 	background: rgb(81,177,220); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(81,177,220,1) 0%, rgba(46,122,196,1) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(81,177,220,1)), color-stop(100%,rgba(46,122,196,1))); /* Chrome,Safari4+ */
@@ -69,16 +71,9 @@
 	background: url("../img/flag.png") 5px center no-repeat;
 }
 
-.menu a:hover, a:active {
+.menu a:hover, .menu a:active {
 	background-color: #4eabda;
 	color: white;
-}
-
-.wrapper {
-	background: url('../img/background.jpg') no-repeat;
-	height: 1080px;
-	width: 1215px;
-	margin: 0 auto;
 }
 
 .cadastre {
@@ -103,6 +98,29 @@
 	margin: 2px auto;
 	top: 215px;
 }
+
+.facebook>a>span:first-child:before {
+	display: block;
+	float: left;
+	content: '';
+	height: 34px;
+	width: 37px;
+	background: url("../img/fb.png") center no-repeat;
+	border-left: 1px solid #3c4e7e;
+	border-radius: 3px 0 0 3px;
+}
+
+.facebook>a>span:last-child:after {
+	content: '';
+	display: block;
+	float: right;
+	height: 34px;
+	width: 34px;
+	background: url("../img/go.png") center no-repeat;
+	border-radius: 0 3px 3px 0;
+	border-right: 1px solid #3c4e7e;
+}
+
 .facebook {
 	background: rgb(62,86,148); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(62,86,148,1) 0%, rgba(45,65,118,1) 100%); /* FF3.6-15 */
@@ -110,14 +128,14 @@
 	background: linear-gradient(to bottom,  rgba(62,86,148,1) 0%,rgba(45,65,118,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e5694', endColorstr='#2d4176',GradientType=0 ); /* IE6-9 */
 	border-radius: 3px;
-	-webkit-box-shadow: inset 1px 1px 0px 0px rgba(119,137,183,1);
-	-moz-box-shadow: inset 1px 1px 0px 0px rgba(119,137,183,1);
-	box-shadow: inset 1px 1px 0px 0px rgba(119,137,183,1);
+	border-top: 1px solid #7589bb;
+	border-bottom: 1px solid #344066;
 	position: relative;
 	width: 276px;
 	top: 36px;
 	margin: 0 auto;
 }
+
 .facebook a {
 	display: block;
 	line-height: 34px;
@@ -128,25 +146,9 @@
 	text-align: center;
 	letter-spacing: 2px;
 }
+
 .facebook a span {
 	font-weight: 900;
-
-}
-.facebook span:first-child {
-	display: inline-block;
-	border-right: 1px solid #1f3d71;
-	padding: 0 15px;
-}
-.facebook span:nth-child(2) {
-	display: inline-block;
-	padding-left: 15px;
-	border-left: 1px solid #4c68a9;
-}
-.facebook span:nth-child(3) {
-	padding-right: 15px;
-}
-.facebook span:last-child {
-	padding: 0 15px;
 }
 
 p.ou {
@@ -157,6 +159,7 @@ p.ou {
 	background: none;
 	text-align: center;
 }
+
 .ou:before, .ou:after {
 	content: "";
 	border-top: 1px solid #666;
@@ -177,13 +180,10 @@ p.ou {
 }
 
 form {
-	position: relative;
-	top: 100px;
-	left: 142px;
+	margin: 110px auto;
 }
 
 input:not([type="checkbox"]) {
-	background: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000111+0,121110+100 */
 	background: rgb(0,1,17); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(0,1,17,1) 0%, rgba(18,17,16,1) 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top,  rgba(0,1,17,1) 0%,rgba(18,17,16,1) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -191,31 +191,41 @@ input:not([type="checkbox"]) {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000111', endColorstr='#121110',GradientType=0 ); /* IE6-9 */
 	color: #ccc;
 	width: 258px;
-	border-bottom: #141414;
+	border-bottom: 1px solid #484948;
 	border-top: none;
 	border-right: none;
 	border-left: none;
 	margin: 8px auto;
 	line-height: 35px;
 	padding-left: 18px;
+	display: block;
 }
 
-input:focus input:not([type="checkbox"]){
+input[type="password"] {
+	margin-bottom: 20px;
+}
+
+input:focus {
 	background: #1b5288;
-	border-bottom: 1px solid #1f5384; 
+	border: 1px solid #1e4b76;
+	border-bottom: 1px solid #689bcc;
 	outline: none;
 	-webkit-box-shadow: 0px 0px 16px 2px rgba(77,137,180,1);
 	-moz-box-shadow: 0px 0px 16px 2px rgba(77,137,180,1);
 	box-shadow: 0px 0px 16px 2px rgba(77,137,180,1);
 }
-.label {
+
+input[type="checkbox"] {
+	box-shadow: none;
+}
+
+label {
 	color: #ccc;
-	width: 276px;
-	margin: 20px 0;
+	position: relative;
+	left: 138px;
 }
 
 button {
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#67c6e6+0,2e7ac4+100 */
 	background: rgb(103,198,230); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(103,198,230,1) 0%, rgba(46,122,196,1) 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top,  rgba(103,198,230,1) 0%,rgba(46,122,196,1) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -227,13 +237,15 @@ button {
 	text-align: center;
 	line-height: 33px;
 	padding: 0 10px;
-	margin-left: 60px;
+	margin: 20px auto;
+	display: block;
 }
 
 .agreement {
 	color: #ccc;
 	font-size: 11px;
+	line-height: 15px;
 	position: relative;
-	top: 120px;
+	top: -80px;
 	text-align: center;
 }
