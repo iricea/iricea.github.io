@@ -11,7 +11,7 @@ var yourName = prompt('Enter your name');
 
 // method #1
 // if (names.indexOf(yourName) != -1) {
-// 	console.log('%s, you entered successfully', yourName);
+// 	alert(yourName + ', you entered successfully');
 // } else {
 // 	alert("you don\'t have permission")
 // }

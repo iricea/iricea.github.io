@@ -11,5 +11,5 @@ function pow(myBase, myExponent) {
 	return result;
 }
 
-// var calculationResult = pow(myBase, myExponent);
-console.log( 'Ваш результат =', pow(myBase, myExponent) );
+var calculationResult = pow(myBase, myExponent);
+console.log( 'Ваш результат = %d', calculationResult );
