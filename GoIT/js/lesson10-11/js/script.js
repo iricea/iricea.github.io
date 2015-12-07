@@ -1,15 +1,15 @@
 // task #1
 
-var myBase = + prompt('Введите число');
-var myExponent = + prompt('Введите степень');
+var myBase = parseInt( prompt('Введите число') );
+var myExponent = parseInt( prompt('Введите степень') );
 
 function pow(myBase, myExponent) {
-		var result = 1;
-		for (i=0; i < myExponent; i++) {
-		result = myBase * result
-		};
+	var result = 1;
+	for (var i = 0; i < myExponent; i++) {
+		result *= myBase;
+	}
 	return result;
-};
+}
 
-var calculationResult = pow(myBase, myExponent);
-console.log('Ваш результат = ', calculationResult);
+// var calculationResult = pow(myBase, myExponent);
+console.log( 'Ваш результат =', pow(myBase, myExponent) );
