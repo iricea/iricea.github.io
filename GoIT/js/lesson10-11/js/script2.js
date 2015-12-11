@@ -18,13 +18,13 @@ var yourName = prompt('Enter your name');
 
 // method #2
 for (var i = 0; i < names.length; i++) {
-	var check = 0;
-	check += (yourName === names[i]);
+	var isMatch = (yourName === names[i]);
+	break;
 }
 
-console.log(check);
+console.log(isMatch);
 
-if (check > 0) {
+if (isMatch) {
 	alert(yourName + ', you entered successfully');
 } else {
 	alert("you don\'t have permission")
