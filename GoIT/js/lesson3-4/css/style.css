@@ -19,3 +19,7 @@ label {
   font-weight: normal;
   padding-left: 11px;
 }
+
+.wrapper {
+	margin-left: 100px;
+}
